@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    color: whitesmoke;
+    width: 100%;
+}
+
+/* Header styling */
+.header {
+    background-color: rgb(34, 95, 237);
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: rgb(237, 34, 34);
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 100%;
+}
+button {
+    background-color: rgb(34, 95, 237);
+    color: whitesmoke;
+}
+
+.product-card {
+    margin-bottom: 20px;
+}
+.product-card .card {
+    background-color: white;
+    color: white;
+}
+.product-img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+.product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #777;
+}
+.product-price {
+    font-size: 1.1em;
+    color: #777;
+}
+.vendor-name {
+    font-size: 1em;
+    color: #777;
+}

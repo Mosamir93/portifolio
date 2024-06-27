@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/search" method="post">
+    <input type="text" name="search_term" placeholder="Search for products...">
+    <button type="submit">Search</button>
+</form>
+{% endblock %}
