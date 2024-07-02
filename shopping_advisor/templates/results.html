@@ -1,17 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Search Results</h1>
+<h1>Search Results for "{{ search_term }}"</h1>
 <!-- Add the search form at the top -->
+<script src="{{ url_for('static', filename='js/search_history.js') }}"></script>
 <form action="{{ url_for('search') }}" method="post" class="mb-4">
     <div class="input-group">
-        <input type="text" name="search_term" class="form-control" placeholder="Search for products..." required>
+        <input type="text" name="search_term" class="form-control" value="{{ search_term }}" placeholder="Search for products..." required>
         <div class="input-group-append">
             <button class="btn btn-primary" type="submit">Search</button>
         </div>
     </div>
+    <div id="searchHistoryContainer" class="search-history-container"></div>
 </form>
-<div class="row">
+{% if no_results %}
+    <div class="alert alert-warning" role="alert">
+        No results found for "{{ search_term }}".
+    </div>
+{% else %}
+<div class="d-flex flex-wrap">
     {% for result in results %}
     <div class="col-md-4 product-card">
         <div class="card">
@@ -25,5 +32,6 @@
     </div>
     {% endfor %}
 </div>
+{% endif %}
 <a href="/">Back to Search</a>
 {% endblock %}
