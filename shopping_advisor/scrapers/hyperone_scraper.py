@@ -1,3 +1,7 @@
+"""
+This file contains the web scraping logic
+for Hyperone.
+"""
 from ..browser_manager import BrowserManager
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
@@ -5,6 +9,9 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import urllib.parse
 
 def scrape_hyperone(search_term):
+    """
+    Scrape product data from Hyperone based on the search term.
+    """
     browser_manager = BrowserManager()
     browser = browser_manager.get_browser()
     try:

@@ -1,0 +1,12 @@
+portifolio/
+*.pyc
+__pycache__/
+instance/
+.webassets-cache
+.env
+.DS_Store
+*.pyo
+*.pyd
+*.pdb
+*.sqlite3
+*.log

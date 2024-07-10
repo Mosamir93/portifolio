@@ -1,3 +1,7 @@
+"""
+This file contains the web scraping logic
+for Oscar.
+"""
 from ..browser_manager import BrowserManager
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
@@ -6,6 +10,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 def scrape_oscar(search_term):
+    """
+    Scrape product data from Oscar based on the search term.
+    """
     browser_manager = BrowserManager()
     browser = browser_manager.get_browser()
 
