@@ -3,6 +3,9 @@
 ## Project Description
 This project is a web scraping application that allows users to search for products across multiple vendors and compare prices. The application is built using Flask, Selenium, and BeautifulSoup, and is optimized for concurrent scraping and performance.
 
+## Author
+Mohamed Samir [Linkedin](www.linkedin.com/in/mohamed-el-shirbiny-155b0a128)
+
 ## Blog Post
 [creating a web scraping and aggregation web app with flask and selenium](https://medium.com/@mohamedelshirbiny23/creating-a-web-scraping-and-aggregation-web-app-with-flask-and-selenium-dce73b6d49a1)
 
@@ -51,9 +54,9 @@ This project is a web scraping application that allows users to search for produ
     docker run -p 5000:5000 shopping-advisor
     ```
 ## Usage
-![Homepage](static/images/homepage.png)
-Enter the name of the product you are looking foor in the search box and the results will be shown sorted in ascending order
-![Search Results](static/images/results_page.png)
+Enter the name of the product you are looking foor in the search box and the results will be shown sorted in ascending order.
+![Homepage](shopping_advisorstatic/images/homepage.png)
+![Search Results](shopping_advisor/static/images/results_page.png)
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
