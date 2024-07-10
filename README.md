@@ -55,7 +55,7 @@ Mohamed Samir [Linkedin](www.linkedin.com/in/mohamed-el-shirbiny-155b0a128)
     ```
 ## Usage
 Enter the name of the product you are looking foor in the search box and the results will be shown sorted in ascending order.
-![Homepage](shopping_advisorstatic/images/homepage.png)
+![Homepage](shopping_advisor/static/images/homepage.png)
 ![Search Results](shopping_advisor/static/images/results_page.png)
 
 ## Contributing
